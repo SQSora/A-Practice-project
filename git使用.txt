@@ -1,0 +1,8 @@
+命令：
+git clone <链接>	#拉取远程仓库资源。
+git add . 	#添加文件
+git commit -m "text"		#生成一个commit
+git push origin master 	#将文件推送给服务器，
+	
+猪
+.gitignore 告示git这些文件不上传
