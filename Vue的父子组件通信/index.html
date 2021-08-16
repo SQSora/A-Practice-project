@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <title>父子通信</title>
+</head>
+<body>
+  <div id="app">
+  <h2>父组件的值:{{app_num}}</h2>
+  <cpn :zi_num="app_num"></cpn>
+  </div>
+
+  <template id="cpn">
+  <div>
+  <h2>父组件传过来的值:{{zi_num}}</h2>
+  </div>
+  </template>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+const cpn = { //子组件vue内容，要在实例上面
+   template: '#cpn',//绑定id=cpn的模板
+   props: {
+     zi_num: Number,
+   }
+ }
+new Vue({ //父组件
+  el: "#app",
+  data() {
+    return {
+      app_num:123
+    }
+  },
+  components: {
+    cpn //..
+  }
+})
+</script>
+<html>
