@@ -1,7 +1,9 @@
 命令：
 git clone <链接>	#拉取远程仓库资源。
 @不要忘记cd进文件夹
+
 git add . 	#添加文件
+使用git commit -am 'test' 就能将所有的文件提交
 git commit -m "text"		#生成一个commit
 git push origin master 	#将文件推送给服务器
 
