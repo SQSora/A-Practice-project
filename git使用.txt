@@ -12,5 +12,5 @@ git pull origin main 		#把本地仓库的变化连接到远程仓库主分支
 git push -u origin master 	#把本地仓库的文件推送到远程仓库
 	
 猪
-.gitignore 告示git这些文件不上传
+.gitignore 告诉git这些文件不上传
 可以在子目录也放一个
