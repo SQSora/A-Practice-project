@@ -1,21 +1,18 @@
 <template>
   <div id="home">
-  <nav-bar class="home-nav">
-    <div slot="center">购物街</div>
-  </nav-bar>
-  <home-swiper :banners="banners"/>
+    <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
+    <home-swiper :banners="banners"/>
   </div>
 </template>
 
 <script>
-  import NavBar from '@/components/common/Navbar/Navbar.vue'
-  import HomeSwiper from './Home_Swiper/HomeSwiper.vue'
+  import NavBar from '@/components/common/Navbar/Navbar'
+  import HomeSwiper from './HomeSwiper/HomeSwiper'
   import {getHomeMultidata} from 'network/home'
 
 
   export default {
     name: "Home",
-    
     components:{
       NavBar,
       HomeSwiper

@@ -35,7 +35,7 @@ const routes = [
 ]
 const router = new VueRouter({
   routes,   //相当于 routes:rooutes
-  mode: 'history'
+  mode: 'history'  //编译时候去掉
 })
 
 // 3.导出router
