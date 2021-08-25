@@ -4,6 +4,10 @@
 // .set('components',resolve('./src/components'))
 // .set('views',resolve('src/views'))
 module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+    ? './'
+    : '/',
+
     configureWebpack: {
       resolve: {
         alias: {
