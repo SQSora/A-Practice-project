@@ -15,8 +15,7 @@ git push -u origin master 	#把本地仓库的文件推送到远程仓库
 git branch
 
 切换分支
-
-$ git checkout
+git checkout
 
 猪
 .gitignore 告诉git这些文件不上传
